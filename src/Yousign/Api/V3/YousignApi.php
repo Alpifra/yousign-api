@@ -217,7 +217,10 @@ final class YousignApi extends AbstractApi
      */
     public function downloadSignatureRequest(string $signatureRequestId): StreamInterface
     {
-        $response = $this->client->get("signature_requests/{$signatureRequestId}/documents/download", ['version' => 'current']);
+        $response = $this->client->get(
+            "signature_requests/{$signatureRequestId}/documents/download",
+            ['query' => ['version' => 'current']]
+        );
 
         return $response->getBody();
     }
