@@ -18,19 +18,19 @@ use Yousign\YousignClient;
 
 /**
  * Document handles document data
- * 
- * @param string $id
- * @param string $filename
- * @param string $nature
- * @param string $content_type
- * @param string $sha256
- * @param bool $is_protected
- * @param bool $is_signed
- * @param \DateTime $created_at
- * @param int $total_pages
- * @param bool $is_locked
- * @param DocumentInitials $initials
- * @param int $total_anchors
+ *
+ * @property string $id
+ * @property string $filename
+ * @property string $nature
+ * @property string $content_type
+ * @property string $sha256
+ * @property bool $is_protected
+ * @property bool $is_signed
+ * @property \DateTime $created_at
+ * @property int $total_pages
+ * @property bool $is_locked
+ * @property DocumentInitials $initials
+ * @property int $total_anchors
  */
 class Document extends AbstractModel
 {

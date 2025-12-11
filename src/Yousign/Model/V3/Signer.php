@@ -18,9 +18,9 @@ use Yousign\YousignClient;
 
 /**
  * Document handles document data
- * 
- * @param string $id
- * @param string $status
+ *
+ * @property string $id
+ * @property string $status
  */
 class Signer extends AbstractModel
 {

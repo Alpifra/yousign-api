@@ -24,7 +24,7 @@ abstract class Factory
     /**
      * Factory method to create a Document model
      *
-     * @param  array $attributes
+     * @property  array $attributes
      */
     public static function createDocument(array $attributes = []): Document
     {
@@ -40,7 +40,7 @@ abstract class Factory
     /**
      * Factory method to create a DocumentCollection model
      *
-     * @param  array $items
+     * @property  array $items
      */
     public static function createDocumentCollection(array $items = []): DocumentCollection
     {
@@ -57,7 +57,7 @@ abstract class Factory
     /**
      * Factory method to create a SignatureRequest model
      *
-     * @param  array $attributes
+     * @property  array $attributes
      */
     public static function createSignatureRequest(array $attributes = []): SignatureRequest
     {
@@ -73,7 +73,7 @@ abstract class Factory
     /**
      * Factory method to create a SignatureRequestCollection model
      *
-     * @param  array $items
+     * @property  array $items
      */
     public static function createSignatureRequestCollection(array $items = []): SignatureRequestCollection
     {
@@ -90,7 +90,7 @@ abstract class Factory
     /**
      * Factory method to create a Signer model
      *
-     * @param  array $attributes
+     * @property  array $attributes
      */
     public static function createSigner(array $attributes = []): Signer
     {
@@ -106,7 +106,7 @@ abstract class Factory
     /**
      * Factory method to create a SignerCollection model
      *
-     * @param  array $items
+     * @property  array $items
      */
     public static function createSignerCollection(array $items = []): SignerCollection
     {
@@ -123,7 +123,7 @@ abstract class Factory
     /**
      * Factory method to create a User model
      *
-     * @param  array $attributes
+     * @property  array $attributes
      */
     public static function createUser(array $attributes = []): User
     {
@@ -139,7 +139,7 @@ abstract class Factory
     /**
      * Factory method to create a UserCollection model
      *
-     * @param  array $items
+     * @property  array $items
      */
     public static function createUserCollection(array $items = []): UserCollection
     {
@@ -156,7 +156,7 @@ abstract class Factory
     /**
      * Factory method to create a Workspace model
      *
-     * @param  array $attributes
+     * @property  array $attributes
      */
     public static function createWorkspace(array $attributes = []): Workspace
     {
@@ -172,7 +172,7 @@ abstract class Factory
     /**
      * Factory method to create a WorkspaceCollection model
      *
-     * @param  array $items
+     * @property  array $items
      */
     public static function createWorkspaceCollection(array $items = []): WorkspaceCollection
     {

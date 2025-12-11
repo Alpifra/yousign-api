@@ -18,27 +18,27 @@ use Yousign\YousignClient;
 
 /**
  * Document handles document data
- * 
- * @param string $id
- * @param string $status
- * @param string $name
- * @param string $delivery_mode
- * @param \DateTime $created_at
- * @param bool $ordered_signers
- * @param string $timezone
- * @param string $email_custom_note
- * @param \DateTime $expiration_date
- * @param string $source
- * @param SignerCollection $signers
- * @param ApproverCollection $approvers
- * @param DocumentCollection $documents
- * @param SenderCollection $sender
- * @param string $external_id
- * @param string $branding_id
- * @param string $custom_experience_id
- * @param bool $signers_allowed_to_decline
- * @param string $workspace_id
- * @param Notification $email_notification
+ *
+ * @property string $id
+ * @property string $status
+ * @property string $name
+ * @property string $delivery_mode
+ * @property \DateTime $created_at
+ * @property bool $ordered_signers
+ * @property string $timezone
+ * @property string $email_custom_note
+ * @property \DateTime $expiration_date
+ * @property string $source
+ * @property SignerCollection $signers
+ * @property ApproverCollection $approvers
+ * @property DocumentCollection $documents
+ * @property SenderCollection $sender
+ * @property string $external_id
+ * @property string $branding_id
+ * @property string $custom_experience_id
+ * @property bool $signers_allowed_to_decline
+ * @property string $workspace_id
+ * @property Notification $email_notification
  */
 class SignatureRequest extends AbstractModel
 {
