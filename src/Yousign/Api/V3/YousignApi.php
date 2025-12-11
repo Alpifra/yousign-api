@@ -213,11 +213,18 @@ final class YousignApi extends AbstractApi
      * Cancel a signature request
      *
      * @param  string $signatureRequestId
+     * @param  string $reason
+     * @param  string|null $customNote
      * @return SignatureRequest
      */
-    public function cancelSignatureRequest(string $signatureRequestId): SignatureRequest
+    public function cancelSignatureRequest(string $signatureRequestId, string $reason, string|null $customNote = null): SignatureRequest
     {
-        $response = $this->client->post("signature_requests/{$signatureRequestId}/cancel", []);
+        $response = $this->client->post("signature_requests/{$signatureRequestId}/cancel", [
+            'json' => [
+                'reason'      => $reason,
+                'custom_note' => $customNote,
+            ]
+        ]);
 
         return Factory::createSignatureRequest(
             json_decode((string) $response->getBody(), true)
