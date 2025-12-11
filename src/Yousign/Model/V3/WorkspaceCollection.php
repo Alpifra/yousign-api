@@ -18,6 +18,12 @@ use Yousign\YousignClient;
 
 /**
  * WorkspaceCollection handles a pool of workspace data
+ *
+ * @method int count()
+ * @method Workspace|null top()
+ * @method Workspace|null bottom()
+ * @method mixed offsetGet(int $index)
+ * @method mixed offsetSet(int $index, mixed $data)
  */
 class WorkspaceCollection extends AbstractModelCollection
 {

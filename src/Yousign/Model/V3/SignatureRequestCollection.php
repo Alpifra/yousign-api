@@ -17,9 +17,11 @@ use Yousign\Model\AbstractModelCollection;
 use Yousign\YousignClient;
 
 /**
- * DocumentCollection handles a pool of files data
+ * SignatureRequestCollection handles a pool of signatures requests data
  *
  * @method int count()
+ * @method SignatureRequest|null top()
+ * @method SignatureRequest|null bottom()
  * @method mixed offsetGet(int $index)
  * @method mixed offsetSet(int $index, mixed $data)
  */

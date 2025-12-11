@@ -18,6 +18,12 @@ use Yousign\YousignClient;
 
 /**
  * UserCollection handles a pool of user data
+ *
+ * @method int count()
+ * @method User|null top()
+ * @method User|null bottom()
+ * @method mixed offsetGet(int $index)
+ * @method mixed offsetSet(int $index, mixed $data)
  */
 class UserCollection extends AbstractModelCollection
 {

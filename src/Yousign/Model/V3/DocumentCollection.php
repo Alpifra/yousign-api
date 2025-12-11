@@ -20,6 +20,8 @@ use Yousign\YousignClient;
  * DocumentCollection handles a pool of files data
  *
  * @method int count()
+ * @method Document|null top()
+ * @method Document|null bottom()
  * @method mixed offsetGet(int $index)
  * @method mixed offsetSet(int $index, mixed $data)
  */
