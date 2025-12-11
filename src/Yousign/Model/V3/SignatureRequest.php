@@ -42,5 +42,8 @@ use Yousign\YousignClient;
  */
 class SignatureRequest extends AbstractModel
 {
+    public const OTHER_REASON = 'other';
+    public const REASONS = ['contractualization_aborted', 'errors_in_document', self::OTHER_REASON];
+
     public string $version = YousignClient::API_VERSION_3;
 }
