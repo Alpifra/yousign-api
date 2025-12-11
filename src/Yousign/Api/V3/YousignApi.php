@@ -95,7 +95,7 @@ final class YousignApi extends AbstractApi
 
     /**
      * Patch a document in a signature request
-     * 
+     *
      * @param  string $signatureRequestId
      * @param  string $documentId
      * @param  array<mixed> $params
@@ -203,6 +203,21 @@ final class YousignApi extends AbstractApi
     public function activateSignatureRequest(string $signatureRequestId): SignatureRequest
     {
         $response = $this->client->post("signature_requests/{$signatureRequestId}/activate", []);
+
+        return Factory::createSignatureRequest(
+            json_decode((string) $response->getBody(), true)
+        );
+    }
+
+    /**
+     * Cancel a signature request
+     *
+     * @param  string $signatureRequestId
+     * @return SignatureRequest
+     */
+    public function cancelSignatureRequest(string $signatureRequestId): SignatureRequest
+    {
+        $response = $this->client->post("signature_requests/{$signatureRequestId}/cancel", []);
 
         return Factory::createSignatureRequest(
             json_decode((string) $response->getBody(), true)
@@ -319,7 +334,7 @@ final class YousignApi extends AbstractApi
 
     /**
      * Patch a signer in a signature request
-     * 
+     *
      * @param  string $signatureRequestId
      * @param  string $signerId
      * @param  array<mixed> $params
