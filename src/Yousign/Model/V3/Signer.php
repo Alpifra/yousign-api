@@ -17,10 +17,18 @@ use Yousign\Model\AbstractModel;
 use Yousign\YousignClient;
 
 /**
- * Document handles document data
+ * Signer handles signer data
  *
  * @property string $id
  * @property string $status
+ * @property string $signature_level
+ * @property string|null $signature_authentication_mode
+ * @property string $signature_link
+ * @property \DateTime $signature_link_expiration_date
+ * @property string $signature_image_preview
+ * @property string $delivery_mode
+ * @property string $identification_attestation_id
+ * @property bool $pre_identity_verification_required
  */
 class Signer extends AbstractModel
 {

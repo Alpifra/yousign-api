@@ -17,7 +17,7 @@ use Yousign\Model\AbstractModel;
 use Yousign\YousignClient;
 
 /**
- * Document handles document data
+ * SignatureRequest handles signature request data
  *
  * @property string $id
  * @property string $status
